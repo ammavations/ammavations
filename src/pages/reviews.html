@@ -1,0 +1,103 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on OG social Media Title Tag'
+tagTitle: 'Reviews'
+preloadCSS: '/css/reviews.css'
+permalink: 'reviews/'
+eleventyNavigation:
+    key: Reviews
+    order: 400
+---
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Our Reviews</h1>
+  {% image './src/images/copper_shunt.jpg', 'copper shunt', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews">
+  <div class="container">
+    <div class="review">
+      <picture>
+        <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+      </picture>
+      <p>
+		  I told Ammavations I wanted a rocket-powered office chair, and they delivered! Now, I commute to the coffee machine at breakneck speed. Downsides include spilled coffee and an HR visit, but totally worth it for the thrill!
+    </p>
+      <div class="star-group">
+        <span class="name">Daring Dave - The Rocketeer<span class="desc">Client</span></span>
+        <picture>
+          <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+        </picture>
+      </div>
+    </div>
+    <div class="review">
+      <picture>
+        <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+      </picture>
+      <p>
+        I challenged Ammavations to build me a quantum leap device. Now, I'm quantum leaping to conclusions faster than anyone else. They might not have cracked quantum physics, but my irrational arguments are top-notch!
+      </p>
+      <div class="star-group">
+        <span class="name">Quantum Quirky Quinn<span class="desc">Client</span></span>
+        <picture>
+          <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+        </picture>
+      </div>
+    </div>
+    <div class="review">
+      <picture>
+        <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+      </picture>
+      <p>
+        I asked Ammavations for a device that generates laughs on demand. They handed me a mirror and said, "Your sense of humor is the best laughter generator." Well played, Ammavations, well played.
+      </p>
+      <div class="star-group">
+        <span class="name">Jestful Jenny - The Laugh Generator<span class="desc">Client</span></span>
+        <picture>
+          <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+        </picture>
+      </div>
+    </div>
+    <div class="review">
+      <picture>
+        <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
+      </picture>
+      <p>
+        Ammavations transformed my boring desk into a disco dance floor. Now, every time I hit a deadline, my desk lights up, and disco music starts blaring. 
+		Colleagues may hate me, but my deadlines never felt groovier!
+      </p>
+      <div class="star-group">
+        <span class="name">Disco Danny - The Dancing Desk Dynamo<span class="desc">Client</span></span>
+        <picture>
+          <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">Get It Done <br> With Us Today</h2>
+    <p>
+    	Ready to embark on a journey of innovation? Choose Ammavations.
+    </p>
+    <a href="/contact.html" class="button-solid">Free Estimate</a>
+  </div>
+  {% image './src/images/copper_shunt.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+
+</section>

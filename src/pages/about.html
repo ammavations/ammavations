@@ -1,0 +1,76 @@
+---
+layout: 'base.html'
+description: "Discover Ammavations, your trusted partner for robust engineering solutions across industrial, medical, and consumer domains. "
+metaTitle: 'About Ammavations: Engineering Solutions for Industrial, Medical, and Consumer Needs'
+tagTitle: 'About'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/about.css'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  {% image './src/images/poly_machine.jpg', 'poly machine', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/control_cabinet.jpg', 'control cabinet', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/CNC.jpg', 'cnc', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">AMMAvations</h2>
+      <p class="cs-text">
+		Ammavations provides robust engineering solutions in industrial, medical, and consumer spaces.  
+        We specialize in a multidisciplinary approach with expertise in mechanical, electrical, software, 
+        and firmware design.  From initial concept to manufacturing or anywhere in between, we can help. 
+        Our dynamic approach to any challenge launches customers forward.
+	  </p>
+      <p class="cs-text">
+		  Ammavations brings your ideas to life through innovation and
+          technical expertise.
+	  </p>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+            Why be ordinary when you can be engineered to be extraordinary? Ammavations – where innovation meets soldering iron.
+        </p>
+        <span class="cs-name">Alex Maul</span>
+        <span class="cs-job">Chief Problem Solver, Engineer</span>
+        <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+      </div>
+      <a href="" class="button-solid">More About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">Get It Done <br> With Us Today</h2>
+    <p>
+        Ready to embark on a journey of innovation? Choose Ammavations.
+    </p>
+    <a href="/contact.html" class="button-solid">Free Estimate</a>
+  </div>
+  {% image './src/images/copper_shunt.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
+</section>

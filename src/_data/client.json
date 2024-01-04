@@ -1,0 +1,15 @@
+{
+  "name": "AMMAvations",
+  "email": "amaul@ammavations.com",
+  "phone": "720-289-7106",
+  "phoneFormatted": "(720) 289-7106",
+  "address": {
+    "lineOne": "First Address Line",
+    "lineTwo": "Second Address Line, If Needed",
+    "city": "Golden",
+    "county": "CO",
+    "postcode": "80403",
+    "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+  },
+  "domain": "www.website.com"
+}

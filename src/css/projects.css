@@ -3,85 +3,131 @@
 <--- -------------------------- -*/
 /* Mobile - 360px - Contains hover animation */
 @media only screen and (min-width: 0em) {
-  #gallery {
-    /* Centers button */
-    text-align: center;
-    padding: var(--sectionPadding);
+.portfolio {
+	max-width: 1200px;
+	margin: 0 auto;
+}  
+.project {
+	display: inline-block;
+	vertical-align: top;
     position: relative;
-    /* Prevents overflow from the image going off screen */
+    margin: 50px 5px;
     overflow: hidden;
+	width: 32%;
+	max-width: 400px;
   }
-  #gallery .cs-container {
+  .project ul li {
+	  list-style-type: circle;
+  }
+  .project img, .project_row img, .project p {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .project:hover img {
+    transform: scale(1.1);
+  }
+
+  .img_title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    max-width: 82.625em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .project:hover .img_title {
+    opacity: 1;
+  }
+  .cs-left:hover .img_title {
+	opacity: 1;
+  }
+  #sbs {
+    padding: 50px;
+  }
+  #sbs .cs-container {
+    width: 100%;
+    max-width: 80rem;
     margin: auto;
-  }
-  #gallery .cs-image-group {
-    /* used rem so it doesn't scale with the font size of on parent */
-    font-size: min(1.1vw, 1em);
-    width: 100%;
-    max-width: 82.625em;
-    padding: 0;
-    margin: 0 auto 3.75rem;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 1.875em;
-  }
-  #gallery .cs-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    gap: 1.875em;
+    flex-direction: column;
+    row-gap: 2.5rem;
   }
-  #gallery .cs-picture {
+  #sbs .cs-left {
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, .7em);
+    /* using ems so we can use font size to scale the whole section */
+    width: 35.4375em;
+    height: 26.75em;
     position: relative;
+  }
+  #sbs .cs-picture {
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+    position: absolute;
     display: block;
   }
-  #gallery .cs-picture img {
+  #sbs .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    /* makes image act like a background image */
     object-fit: cover;
   }
-  #gallery .cs-row-1 .cs-picture-1 {
-    width: 26.25em;
-    height: 35.4375em;
+  #sbs .cs-picture1 {
+    width: 20.625em;
+    height: 24.3125em;
+    left: 0;
+    top: 0;
   }
-  #gallery .cs-row-1 .cs-picture-2 {
-    width: 26.25em;
-    height: 39.3125em;
+  #sbs .cs-picture2 {
+    width: 17.875em;
+    height: 17em;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+    /* 6px - 12px */
+    border: clamp(0.275em, 1.5vw, 0.25em) solid #ffffff;
+    right: 0;
+    bottom: 0;
   }
-  #gallery .cs-row-1 .cs-picture-3 {
-    width: 26.25em;
-    height: 32em;
+  #sbs .cs-right {
+    margin: auto;
+    max-width: 33.875rem;
   }
-  #gallery .cs-row-2 .cs-picture-1 {
-    width: 26.25em;
-    height: 30.75em;
+  #sbs .cs-title {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: left;
+    max-width: 50rem;
+    margin: 0 auto 1rem;
+    color: var(--headerColor);
+    position: relative;
   }
-  #gallery .cs-row-2 .cs-picture-2 {
-    width: 26.25em;
-    height: 32.3125em;
+  #sbs .cs-flex-group {
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: #F7F7F7;
+    border-radius: 1rem;
+    position: relative;
   }
-  #gallery .cs-row-2 .cs-picture-3 {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #gallery .cs-row-3 .cs-picture-1 {
-    width: 26.25em;
-    height: 39.0625em;
-  }
-  #gallery .cs-row-3 .cs-picture-2 {
-    width: 26.25em;
-    height: 28.25em;
-  }
-  #gallery .cs-row-3 .cs-picture-3 {
-    width: 26.25em;
-    height: 39.3125em;
+  #sbs .cs-flex-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0 0 1rem;
+    color: #767676;
   }
 }
 /*-- -------------------------- -->
@@ -147,6 +193,18 @@
 @media only screen and (min-width: 64em) {
   #cta {
     padding: 10.5rem 0;
+  }
+  #sbs .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+  }
+  #sbs .cs-left {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+  }
+  #sbs .cs-right {
+    margin: 0;
   }
 }
 /* Large Desktop */

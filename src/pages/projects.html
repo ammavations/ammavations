@@ -23,38 +23,179 @@ eleventyNavigation:
 </section>
 
 <!-- ============================================ -->
-<!--                   Gallery                    -->
+<!--                 Side By Side                 -->
 <!-- ============================================ -->
 
-<section id="gallery">
+<section id="sbs">
   <div class="cs-container">
-    <div class="cs-image-group">
-      <!-- Row 1-->
-      <div class="cs-row cs-row-1">
-        {% image './src/images/port1.jpg', 'port 1', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/port2.jpg', 'port 2', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/port1.jpg', 'port 1', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 2 -->
-      <div class="cs-row cs-row-2">
-        {% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 3 -->
-      <div class="cs-row cs-row-3">
-        {% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/control_cabinet.jpg', 'control cabinet', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/CNC.JPG', 'cnc', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h3 class="cs-title">Rocket Engine Test System</h3>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+            Rocket engines are essential to exploration of the final frontier, space.
+        </p>
+		<p class="cs-flex-p">
+			Rocket Engine Development requires careful real time system monitoring, evaluation, and reaction to any condition 
+			that arises when combusting powerful propellants to create large amounts of thrust.  We’ve developed a system 
+			that’s able operate on hundreds of sensors in a matter of milliseconds using Real Time and FPGA technologies. 
+			Data from all these sensors and controls are recorded and stream to multiple operators, who are able to execute 
+			sequences remotely and securely with confidence.
+        </p>
       </div>
     </div>
-    <a href="/contact" class="button-solid">Get Free Quote</a>
   </div>
 </section>
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+		{% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
+	  {% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h3 class="cs-title">Burst Test Station</h3>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+            Created burst test equipment to evaluate production quality or drug delivery packets.
+        </p>
+		<p class="cs-flex-p">
+			Auto injector systems allow life saving treatments to be deployed to users in a matter of seconds in emergency situations.  These auto injectors utilize drug packets that must have the utmost reliability in construction.  Ammavations has developed a production station that test a packets performance in a pressurized condition.  The packet is loaded into the grippers, automatically submersed in water and pressurized until it bursts or bubbles, leaving the operator with insight to the packet’s performance.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+		{% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
+	  {% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h3 class="cs-title">Medical Filim Cleaning Station</h3>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+            Patented film cleaning station thoroughly clean medical film used in the production of drug delivery packets.
+        </p>
+		<p class="cs-flex-p">
+			The station unwinds films of materials that don’t meet have the cleanliness needed for injection based applications and send the material through four specific cleaning sequences ranging from contact rollers to patented blasting technology using super critical media.  The film is then rewound in an ISO 5 cleanroom tent at sub millimeter accuracy.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+		{% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
+	  {% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h3 class="cs-title">Infrared Camera Calibration Equipment</h3>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+            Designed & fabricated infrared camera calibration equipment palletization system
+        </p>
+		<p class="cs-flex-p">
+			Infrared cameras require a careful calibration routine that runs the sensors through a variety of tests, monitoring 
+			the signal data while driving black bodies and cameras to extreme temperatures.  This process can take a long time and 
+			when completed on a camera by camera basis, throughput is limited.  Ammavations assisted in developing a palletized 
+			system that allows for calibration of up to 64 sensors at one time.  The pallets are a careful balance of automation, 
+			strength, and thermal optimization to provide the most repeatable / reliable conditions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+		{% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
+	  {% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h3 class="cs-title">Smart Fitness Tracking Device</h3>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+            Design & production of Bluetooth based, low power SMART personal fitness tracking device.
+        </p>
+		<p class="cs-flex-p">
+			Intelligent Training Accountability Partner, a mobile platform that allows any user to seamlessly 
+			keep track of their workout regimens, monitor performance, and receive pre-workout, real-time, and 
+			post-workout guidance from a virtual assistant or your trainer. This device alleviates the need to 
+			manually write your workouts on paper or inconveniently type them into a mobile app, neither of which 
+			provides you with real-time feedback and guidance based on your data.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                 Projects                     -->
+<!-- ============================================ -->
+
+<!-- <div class="portfolio">
+    <div class="project">
+		{% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
+      <div class="img_title">Image Title</div>
+    </div>
+	<div class="project">
+		{% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
+		<div class="img_title">Image Title</div>
+	</div>
+	<div class="project">
+		<div class="project_title">
+			<h2>Medical Filim Cleaning Station</h2>
+			<br>
+			<ul>
+				<li>Patented film cleaning station thoroughly clean medical film used in the production of drug delivery packets.</li>
+				<br>
+				<li>The station unwinds films of materials that don’t meet have the cleanliness needed for injection based applications and send the material through four specific cleaning sequences ranging from contact rollers to patented blasting technology using super critical media.  The film is then rewound in an ISO 5 cleanroom tent at sub millimeter accuracy.</li>
+			</ul>
+		</div>
+	</div>
+</div> -->
+<hr>
+<div class="portfolio">
+	<div class="project">
+		<div class="project_title">
+			<h2>Robotic Battery Management Electronics</h2>
+		</div>
+	</div>
+	<div class="project">
+		<div class="project_title">
+			<h2>Touch Screen Temperature Controller</h2>
+		</div>
+	</div>
+	<div class="project">
+		<div class="project_title">
+			<h2>Proton Radiation Therapy Controller</h2>
+		</div>
+	</div>
+</div>
+
+<!-- <div class="cs-image-group">
+<a href="/contact" class="button-solid">Get Free Quote</a>
+</div> -->
 
 <!-- ============================================ -->
 <!--             Final Call to Action             -->

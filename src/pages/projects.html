@@ -18,7 +18,7 @@ eleventyNavigation:
 
 <section id="int-hero">
   <h1 id="home-h">Our Projects</h1>
-  {% image './src/images/copper_shunt.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/projects/copper_shunt.jpg', 'copper shunt', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 
 </section>
 
@@ -30,8 +30,8 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/control_cabinet.jpg', 'control cabinet', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/CNC.JPG', 'cnc', 'cs-picture cs-picture2', 'lazy'%}
+      {% image './src/images/projects/rocket2.jpg', 'um rocket', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/projects/rocket1.jpg', 'LabVIEW GUI', 'cs-picture cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
@@ -56,8 +56,8 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-		{% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
-	  {% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture2', 'lazy'%}
+		{% image './src/images/projects/port1.jpg', 'burst test station', 'cs-picture cs-picture1', 'lazy'%}
+	  {% image './src/images/projects/port2.jpg', 'burst close up', 'cs-picture cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
@@ -78,12 +78,12 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-		{% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
-	  {% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture2', 'lazy'%}
+		{% image './src/images/projects/film1.jpg', 'cleaning station', 'cs-picture cs-picture1', 'lazy'%}
+	  {% image './src/images/projects/film2.jpg', 'clean medical film', 'cs-picture cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
-      <h3 class="cs-title">Medical Filim Cleaning Station</h3>
+      <h3 class="cs-title">Medical Film Cleaning Station</h3>
       <div class="cs-flex-group">
         <p class="cs-flex-p">
             Patented film cleaning station thoroughly clean medical film used in the production of drug delivery packets.
@@ -100,8 +100,8 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-		{% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
-	  {% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture2', 'lazy'%}
+		{% image './src/images/projects/ir3.jpg', 'ir', 'cs-picture cs-picture1', 'lazy'%}
+	  {% image './src/images/projects/irpcba.jpg', 'ir', 'cs-picture cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
@@ -126,8 +126,8 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-		{% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
-	  {% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture2', 'lazy'%}
+		{% image './src/images/projects/smart1.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
+	  {% image './src/images/projects/smart2.jpg', 'port', 'cs-picture cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
@@ -148,6 +148,30 @@ eleventyNavigation:
   </div>
 </section>
 
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+		{% image './src/images/projects/pcba_tft.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h3 class="cs-title">Touch Screen Temperature Controller</h3>
+      <!-- <div class="cs-flex-group">
+        <p class="cs-flex-p">
+            Design & production of Bluetooth based, low power SMART personal fitness tracking device.
+        </p>
+		<p class="cs-flex-p">
+			Intelligent Training Accountability Partner, a mobile platform that allows any user to seamlessly 
+			keep track of their workout regimens, monitor performance, and receive pre-workout, real-time, and 
+			post-workout guidance from a virtual assistant or your trainer. This device alleviates the need to 
+			manually write your workouts on paper or inconveniently type them into a mobile app, neither of which 
+			provides you with real-time feedback and guidance based on your data.
+        </p>
+      </div> -->
+    </div>
+  </div>
+</section>
 
 <!-- ============================================ -->
 <!--                 Projects                     -->
@@ -155,16 +179,16 @@ eleventyNavigation:
 
 <!-- <div class="portfolio">
     <div class="project">
-		{% image './src/images/port1.jpg', 'port', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
+		{% image './src/images/projects/port1.jpg', 'port', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
       <div class="img_title">Image Title</div>
     </div>
 	<div class="project">
-		{% image './src/images/port2.jpg', 'port', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
+		{% image './src/images/projects/port2.jpg', 'port', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
 		<div class="img_title">Image Title</div>
 	</div>
 	<div class="project">
 		<div class="project_title">
-			<h2>Medical Filim Cleaning Station</h2>
+			<h2>Medical Film Cleaning Station</h2>
 			<br>
 			<ul>
 				<li>Patented film cleaning station thoroughly clean medical film used in the production of drug delivery packets.</li>
@@ -179,11 +203,7 @@ eleventyNavigation:
 	<div class="project">
 		<div class="project_title">
 			<h2>Robotic Battery Management Electronics</h2>
-		</div>
-	</div>
-	<div class="project">
-		<div class="project_title">
-			<h2>Touch Screen Temperature Controller</h2>
+            {% image './src/images/projects/pcba_tft.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
 		</div>
 	</div>
 	<div class="project">
@@ -209,5 +229,5 @@ eleventyNavigation:
     </p>
     <a href="/contact.html" class="button-solid">Free Estimate</a>
   </div>
-  {% image './src/images/copper_shunt.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/projects/copper_shunt.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>

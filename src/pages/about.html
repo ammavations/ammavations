@@ -2,7 +2,7 @@
 layout: 'base.html'
 description: "Discover Ammavations, your trusted partner for robust engineering solutions across industrial, medical, and consumer domains. "
 metaTitle: 'About Ammavations: Engineering Solutions for Industrial, Medical, and Consumer Needs'
-tagTitle: 'About'
+tagTitle: 'About Ammavations | Innovative Engineering Solutions'
 preloadCSS: '/css/about.css'
 permalink: 'about/'
 eleventyNavigation:
@@ -29,7 +29,7 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/control_cabinet.jpg', 'control cabinet', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/services/control_cabinet.jpg', 'control cabinet', 'cs-picture cs-picture1', 'lazy'%}
       {% image './src/images/CNC.JPG', 'cnc', 'cs-picture cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
@@ -54,10 +54,94 @@ eleventyNavigation:
         <span class="cs-job">Chief Problem Solver, Engineer</span>
         <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
       </div>
-      <a href="" class="button-solid">More About Us</a>
+      <a href="/contact" class="button-solid">Get In Touch</a>
     </div>
   </div>
 </section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery2">
+    <div class="cs-container">
+        <span class="cs-topper">Our Services</span>
+        <h2 class="cs-services-title">Automation Design | Electrical Engineering | Embedded Systems and firmware | Mechanical Design and Analysis | Software Development</h2>
+        <div class="cs-image-group">
+            <!-- Row 1 -->
+            <!-- <h2 class="cs-topper">Automation</h2> -->
+            <div class="cs-image-item">
+                {% image './src/images/services/control_cabinet.jpg', 'control cabinet', 'cs-picture cs-picture1', 'lazy'%}
+                <h3>Control Cabinet</h3>
+            </div>
+            <div class="cs-image-item">
+                {% image './src/images/services/PLC.jpg', 'PLC', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>PLC</h3>
+            </div>
+            <div class="cs-image-item">
+                {% image './src/images/services/pxi1.jpg', 'pxi', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>PXI 1</h3>
+            </div>
+            <div class="cs-image-item">
+                {% image './src/images/services/RTBlockDiagram.png', 'RT block diagram', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>RT Block Diagram</h3>
+            </div>
+            <div class="cs-image-item">
+                {% image './src/images/services/RTInterface.png', 'rt interface', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>RT Interface</h3>
+            </div>
+        
+            <!-- Row 2 -->
+            <!-- <h2 class="cs-topper">Fabrication</h2> -->
+            <div class="cs-image-item">
+                {% image './src/images/projects/copper_shunt.jpg', 'copper shunt', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>Copper Shunt</h3>
+            </div>
+            <div class="cs-image-item">
+                {% image './src/images/CNC.JPG', 'CNC', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>CNC</h3>
+            </div>
+            <div class="cs-image-item">
+                {% image './src/images/services/IMG_6009.jpg', 'fabrication 1', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>Fabrication 1</h3>
+            </div>
+            <div class="cs-image-item">
+                {% image './src/images/poly_machine.jpg', 'poly machine', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>Poly Machine</h3>
+            </div>
+            <!-- <h2 class="cs-topper">Embedded Systems</h2> -->
+            <div class="cs-image-item">
+                {% image './src/images/services/embedded.jpg', 'embedded systems', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>Embedded Systems</h3>
+            </div>
+            
+            <!-- Row 3 -->
+            <!-- <h2 class="cs-topper">Electrical</h2> -->
+            <div class="cs-image-item">
+                {% image './src/images/services/pcb2.jpg', 'pcb2', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>PCB 2</h3>
+            </div>
+            <div class="cs-image-item">
+                {% image './src/images/services/powersupplyH.png', 'power supply', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>Power Supply</h3>
+            </div>
+            <!-- <h2 class="cs-topper">Mechanical Design and Analysis</h2> -->
+            <div class="cs-image-item">
+                {% image './src/images/services/IrisClamp.JPG', 'Iris Clamp', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>Iris Clamp</h3>
+            </div>
+            <div class="cs-image-item">
+                {% image './src/images/services/steelTank.png', 'Steel Tank SolidWorks', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>24ft Steel Tank SolidWorks Simulation</h3>
+            </div>
+            <div class="cs-image-item">
+                {% image './src/images/services/System Assembly.JPG', 'System Assembly', 'cs-picture', 'lazy', '(max-width: 600px) 200px, 400px'%}
+                <h3>Systems Assembly</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- ============================================ -->
 <!--             Final Call to Action             -->

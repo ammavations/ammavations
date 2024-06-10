@@ -1,16 +1,14 @@
 ---
 layout: 'base.html'
-description: 'Meta description for the page'
-metaTitle: 'Title that shows up on google searches'
-tagTitle: 'Projects'
+description: 'Explore Ammavations cutting-edge engineering projects, from rocket engine test systems to smart fitness tracking devices. Our multidisciplinary expertise in mechanical, electrical, software, and firmware design drives innovation across various industries. Discover how we turn complex challenges into dynamic solutions.'
+metaTitle: 'Engineering Projects by Ammavations | Innovative Solutions for Space, Medical, and Consumer Industries'
+tagTitle: 'Ammavations Projects | Engineering Innovations Across Industries'
 preloadCSS: '/css/projects.css'
 permalink: 'projects/'
 eleventyNavigation:
     key: Projects
     order: 300
 ---
-
-<!-- Enter html code below -->
 
 <!-- ============================================ -->
 <!--                    LANDING                   -->
@@ -149,73 +147,67 @@ eleventyNavigation:
 </section>
 
 <section id="sbs">
-  <div class="cs-container">
+  <div class="cs-container-single">
     <!-- Left Image Section -->
     <div class="cs-left">
 		{% image './src/images/projects/pcba_tft.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
     </div>
     <!-- Right Content Section-->
-    <div class="cs-right">
-      <h3 class="cs-title">Touch Screen Temperature Controller</h3>
+    <div class="cs-right-single">
+      <h3 class="cs-title-single">Touch Screen Temperature Controller</h3>
       <!-- <div class="cs-flex-group">
-        <p class="cs-flex-p">
-            Design & production of Bluetooth based, low power SMART personal fitness tracking device.
-        </p>
-		<p class="cs-flex-p">
-			Intelligent Training Accountability Partner, a mobile platform that allows any user to seamlessly 
-			keep track of their workout regimens, monitor performance, and receive pre-workout, real-time, and 
-			post-workout guidance from a virtual assistant or your trainer. This device alleviates the need to 
-			manually write your workouts on paper or inconveniently type them into a mobile app, neither of which 
-			provides you with real-time feedback and guidance based on your data.
-        </p>
+        <p class="cs-flex-p">More to come ...</p>
+		<p class="cs-flex-p">More to come!</p>
       </div> -->
     </div>
   </div>
+  <div class="cs-image-group">
+      <a href="/contact" class="button-solid">Get Free Quote</a>
+  </div>
+      <!-- <div class="portfolio">
+          <div class="project">
+              <div class="project_title">
+                  <h2>Robotic Battery Management Electronics</h2>
+                  {% image './src/images/projects/pcba_tft.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
+              </div>
+          </div>
+          <div class="project">
+              <div class="project_title">
+                  <h2>Proton Radiation Therapy Controller</h2>
+              </div>
+          </div>
+      </div> -->
 </section>
 
 <!-- ============================================ -->
-<!--                 Projects                     -->
+<!--                   Partners                   -->
 <!-- ============================================ -->
 
-<!-- <div class="portfolio">
-    <div class="project">
-		{% image './src/images/projects/port1.jpg', 'port', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-      <div class="img_title">Image Title</div>
+<section id="partners">
+    <div class="cs-container">
+        <span class="cs-topper">Partners</span>
+    <div class="cs-image-row">
+      <div class="cs-image-item">
+          {% image './src/images/logos/cLD.png', 'CLD', 'cs-picture', 'lazy'%}
+      </div>
+      <div class="cs-image-item">
+        {% image './src/images/logos/solidworks-logo.png', 'SolidWorks', 'cs-picture', 'lazy'%}
+      </div>
+      <div class="cs-image-item">
+        {% image './src/images/logos/CSWP_MD.png', 'SolidWorks', 'cs-picture', 'lazy'%}
+      </div>
+      <div class="cs-image-item">
+        {% image './src/images/logos/matlab-logo.png', 'MatLab', 'cs-picture', 'lazy'%}
+      </div>
+      <div class="cs-image-item">
+        {% image './src/images/logos/NI_Partner.png', 'NI Partner', 'cs-picture', 'lazy'%}
+      </div>
+      <div class="cs-image-item">
+        {% image './src/images/logos/Altium_Designer_logo.png', 'Altium Designer', 'cs-picture', 'lazy'%}
+      </div>
     </div>
-	<div class="project">
-		{% image './src/images/projects/port2.jpg', 'port', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-		<div class="img_title">Image Title</div>
-	</div>
-	<div class="project">
-		<div class="project_title">
-			<h2>Medical Film Cleaning Station</h2>
-			<br>
-			<ul>
-				<li>Patented film cleaning station thoroughly clean medical film used in the production of drug delivery packets.</li>
-				<br>
-				<li>The station unwinds films of materials that don’t meet have the cleanliness needed for injection based applications and send the material through four specific cleaning sequences ranging from contact rollers to patented blasting technology using super critical media.  The film is then rewound in an ISO 5 cleanroom tent at sub millimeter accuracy.</li>
-			</ul>
-		</div>
-	</div>
-</div> -->
-<hr>
-<div class="portfolio">
-	<div class="project">
-		<div class="project_title">
-			<h2>Robotic Battery Management Electronics</h2>
-            {% image './src/images/projects/pcba_tft.jpg', 'port', 'cs-picture cs-picture1', 'lazy'%}
-		</div>
-	</div>
-	<div class="project">
-		<div class="project_title">
-			<h2>Proton Radiation Therapy Controller</h2>
-		</div>
-	</div>
-</div>
-
-<!-- <div class="cs-image-group">
-<a href="/contact" class="button-solid">Get Free Quote</a>
-</div> -->
+  </div>
+</section>
 
 <!-- ============================================ -->
 <!--             Final Call to Action             -->

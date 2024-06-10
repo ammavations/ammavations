@@ -81,6 +81,13 @@
     color: var(--headerColor);
     position: relative;
   }
+  .cs-services-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px auto 100px auto;
+    color: var(--headerColor);
+    position: relative;
+  }
   #sbs .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
@@ -183,6 +190,91 @@
     opacity: .2;
   }
 }
+
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+/* Mobile - 360px - Contains hover animation */
+@media only screen and (min-width: 0em) {
+    #gallery2 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: .1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        display: block;
+    }
+    
+    #gallery2 .cs-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    #gallery2 .cs-topper {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+    
+    #gallery2 .cs-services-title {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+    
+    #gallery2 .cs-image-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 40px;
+        justify-content:center;
+    }
+    
+    #gallery2 .cs-image-item {
+        position: relative;
+        overflow: hidden;
+        width: 350px;
+        height: 300px;
+        margin: 0 auto;
+        border: 1px solid #d3d3d3;
+        border-radius: 10px;
+    }
+    
+    #gallery2 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain !important;
+        object-position: 50% 50%;
+        transition: transform 0.3s ease;
+    }
+    
+    #gallery2 .cs-image-item:hover .cs-picture {
+        transform: scale(1.1);
+    }
+    
+    #gallery2 .cs-image-item h3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        font-size: 1em;
+        text-align: center;
+        transition: transform 0.3s ease;
+        transform: translateY(100%);
+    }
+    
+    #gallery2 .cs-image-item:hover h3 {
+        transform: translateY(0);
+    }
+}
+
+
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/

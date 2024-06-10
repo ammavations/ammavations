@@ -154,7 +154,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+  }
+  #cs-contact .cs-right-section img {
+      max-width: 100%;
+      height: auto;
   }
   #cs-contact .cs-header {
     /* 16px - 20px */
@@ -245,6 +249,11 @@
   #cs-contact #cs-form .cs-label-message {
     width: 100%;
   }
+}
+@media only screen and (max-width: 63em) {
+    #cs-contact .cs-right-section {
+        display: none;
+    }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64em) {
